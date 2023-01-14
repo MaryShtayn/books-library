@@ -1,0 +1,59 @@
+#root {
+  display: flex;
+  height: 100vh;
+}
+.left {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 40%;
+  background-color: aliceblue;
+}
+.right {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 60%;
+  background-color: antiquewhite;
+}
+.title {
+  color: blueviolet;
+  font-size: 36px;
+}
+.button {
+  color: blue;
+  font-size: 20px;
+  border: 1px solid blueviolet;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.title-book {
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.btn {
+  padding: 5px 5px;
+  height: 30px;
+  width: 70px;
+  border-radius: 8%;
+  border: none;
+  font-weight: bold;
+}
+.btn-delete {
+  color: blueviolet;
+  background-color: aliceblue;
+}
+
+.btn-edit {
+  color: aliceblue;
+  background-color: blueviolet;
+}
