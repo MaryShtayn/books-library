@@ -74,7 +74,7 @@ function renderBooksList() {
     .map(
       ({ id, title }) =>
         `<li class = "item" id = '${id}'>
-		<p class = "books-title">${title}</p>
+    <p class = "books-title">${title}</p>
 		<button class = "btn-delete btn">Delete</button>
 		<button class = "btn-edit btn">Edit</button></li>`
     )
@@ -112,7 +112,7 @@ function createPreviewMarkup({ id, title, author, img, plot }) {
 function deleteBook(e) {
   const books = JSON.parse(localStorage.getItem('books'));
   const id = e.target.parentNode.id;
-  const newBooks = books.filter(book => book.id !== id);
+  const newBooks = books.filter(book => book.id != id);
   localStorage.setItem('books', JSON.stringify(newBooks));
   renderBooksList();
 
@@ -157,7 +157,7 @@ function addBook() {
 
     setTimeout(() => alert('The book was successfully added'), 500);
   }
-  data.push(newBook);
+  // data.push(newBook);
 }
 
 function createFormMarkup(book) {

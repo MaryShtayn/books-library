@@ -3,8 +3,8 @@
   height: 100vh;
 }
 .left {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 40%;
   background-color: aliceblue;
 }
@@ -27,16 +27,15 @@
   list-style: none;
   padding: 0;
   margin-top: 0;
+  text-align: left;
 }
 
 .item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
+  justify-content: space-between;
 }
 .title-book {
-  margin-right: auto;
   font-size: 18px;
 }
 
@@ -45,8 +44,8 @@
   height: 30px;
   width: 70px;
   border-radius: 8%;
-  border: none;
   font-weight: bold;
+  border: 0.5px solid blueviolet;
 }
 .btn-delete {
   color: blueviolet;
